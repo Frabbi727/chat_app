@@ -29,6 +29,7 @@ class MessagePage extends GetView<WelcomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primaryElement,
+      body: Text("Hello world"),
 
 
     );
