@@ -1,7 +1,7 @@
-
 import 'package:chatty/pages/frame/welcome/index.dart';
 import 'package:chatty/pages/frame/message/index.dart';
 import 'package:chatty/pages/frame/sign_in/index.dart';
+import 'package:chatty/pages/profile/index.dart';
 import 'package:flutter/material.dart';
 import 'package:chatty/common/middlewares/middlewares.dart';
 
@@ -46,11 +46,18 @@ class AppPages {
     // // 首页
     // GetPage(name: AppRoutes.Contact, page: () => ContactPage(), binding: ContactBinding()),
     // //message page
-     GetPage(name: AppRoutes.Message, page: () => MessagePage(), binding: MessageBinding(),middlewares: [
-      RouteAuthMiddleware(priority: 1),
-     ],),
+    GetPage(
+      name: AppRoutes.Message,
+      page: () => MessagePage(),
+      binding: MessageBinding(),
+      middlewares: [
+        RouteAuthMiddleware(priority: 1),
+      ],
+    ),
     // //我的
-    // GetPage(name: AppRoutes.Profile, page: () => ProfilePage(), binding: ProfileBinding()),
+    GetPage(name: AppRoutes.Profile,
+        page: () => ProfilePage(),
+        binding: ProfileBinding()),
     // //聊天详情
     // GetPage(name: AppRoutes.Chat, page: () => ChatPage(), binding: ChatBinding()),
     //
@@ -58,10 +65,4 @@ class AppPages {
     // GetPage(name: AppRoutes.VoiceCall, page: () => VoiceCallViewPage(), binding: VoiceCallViewBinding()),
     // GetPage(name: AppRoutes.VideoCall, page: () => VideoCallPage(), binding: VideoCallBinding()),
   ];
-
-
-
-
-
-
 }

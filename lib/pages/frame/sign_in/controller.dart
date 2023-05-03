@@ -38,6 +38,7 @@ class SignInController extends GetxController{
         loginPanelListRequestEntity.email=email;
         loginPanelListRequestEntity.open_id=id;
         loginPanelListRequestEntity.type=2;
+        asyncPostAllData();
       }
       }else{
         print("Login in type is not sure");
@@ -50,6 +51,11 @@ class SignInController extends GetxController{
     }
   }
 
+  asyncPostAllData(){
+    print(".... Lets go to message page....>>");
+    Get.offAllNamed(AppRoutes.Message);
+
+  }
 
 
 

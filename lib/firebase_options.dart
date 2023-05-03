@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCjk7MvlxtlJaIIfJAOKlQkEenE4N_FsM4',
-    appId: '1:229182057213:android:ba0fbf82d00249c59c6c94',
+    appId: '1:229182057213:android:610e5ae8e756408d9c6c94',
     messagingSenderId: '229182057213',
     projectId: 'flutter-video-audio-chat-c0bba',
     storageBucket: 'flutter-video-audio-chat-c0bba.appspot.com',
@@ -59,7 +59,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDenVO37lKav35DX6Ho0X6mcaDpSpAKtbA',
-    appId: '1:229182057213:ios:e8b5b499c02eda959c6c94',
+    appId: '1:229182057213:ios:2494fd847930ecec9c6c94',
     messagingSenderId: '229182057213',
     projectId: 'flutter-video-audio-chat-c0bba',
     storageBucket: 'flutter-video-audio-chat-c0bba.appspot.com',

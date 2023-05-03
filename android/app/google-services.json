@@ -7,14 +7,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:229182057213:android:ebc62d6c0a19229f9c6c94",
+        "mobilesdk_app_id": "1:229182057213:android:610e5ae8e756408d9c6c94",
         "android_client_info": {
           "package_name": "com.rabbi.chatty"
         }
       },
       "oauth_client": [
         {
-          "client_id": "229182057213-cc1jshsrfdlttkpqft2mgocpc60c8l30.apps.googleusercontent.com",
+          "client_id": "229182057213-2cv2ib4c748lljlphkt11balvp2dd3es.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,8 +27,15 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "229182057213-cc1jshsrfdlttkpqft2mgocpc60c8l30.apps.googleusercontent.com",
+              "client_id": "229182057213-2cv2ib4c748lljlphkt11balvp2dd3es.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "229182057213-e155rs9eu5jbv8vde55j6bt057ri5sn9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dbestech.chatty"
+              }
             }
           ]
         }
