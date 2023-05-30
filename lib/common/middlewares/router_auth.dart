@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 
 /// Checked user is logged in or not
 class RouteAuthMiddleware extends GetMiddleware {
-  // priority 数字小优先级高
+  // priority Small numbers have high priority
   @override
   int? priority = 0;
 
@@ -17,7 +17,8 @@ class RouteAuthMiddleware extends GetMiddleware {
     if (UserStore.to.isLogin ||
         route == AppRoutes.SIGN_IN ||
         route == AppRoutes.INITIAL ||
-        route == AppRoutes.Message) {
+        route == AppRoutes.Message
+    ) {
       return null;
     } else {
       Future.delayed(Duration(seconds: 2),
