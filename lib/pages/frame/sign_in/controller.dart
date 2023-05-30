@@ -2,6 +2,7 @@
 import 'package:chatty/common/entities/entities.dart';
 import 'package:chatty/common/routes/names.dart';
 import 'package:chatty/common/store/store.dart';
+import 'package:chatty/common/utils/http.dart';
 import 'package:chatty/pages/frame/sign_in/state.dart';
 import 'package:chatty/pages/frame/welcome/state.dart';
 import 'package:flutter/foundation.dart';
@@ -54,7 +55,8 @@ class SignInController extends GetxController{
 
   asyncPostAllData(){
     print(".... Lets go to message page....>>");
-    UserStore.to.setIsLogin=true;
+    //UserStore.to.setIsLogin=true;
+    HttpUtil().get("");
     Get.offAllNamed(AppRoutes.Message);
 
   }
