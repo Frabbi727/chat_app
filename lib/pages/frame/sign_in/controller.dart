@@ -53,10 +53,11 @@ class SignInController extends GetxController{
     }
   }
 
-  asyncPostAllData(){
+  asyncPostAllData() async {
     print(".... Lets go to message page....>>");
     //UserStore.to.setIsLogin=true;
-    HttpUtil().get("");
+  var response= await HttpUtil().get("/api/index");
+  print('the response is::::::::::   ${response.toString()}');
     Get.offAllNamed(AppRoutes.Message);
 
   }
