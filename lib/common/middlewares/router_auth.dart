@@ -17,7 +17,7 @@ class RouteAuthMiddleware extends GetMiddleware {
     if (UserStore.to.isLogin ||
         route == AppRoutes.SIGN_IN ||
         route == AppRoutes.INITIAL
-        || route == AppRoutes.Message
+        //|| route == AppRoutes.Message
     ) {
       return null;
     } else {

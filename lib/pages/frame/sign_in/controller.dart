@@ -55,9 +55,11 @@ class SignInController extends GetxController{
 
   asyncPostAllData() async {
     print(".... Lets go to message page....>>");
-    //UserStore.to.setIsLogin=true;
+    UserStore.to.setIsLogin=true;
   var response= await HttpUtil().get("/api/index");
   print('the response is::::::::::   ${response.toString()}');
+//  var userName= _googleSignIn.currentUser?.displayName;
+//   print("User name from email $userName");
     Get.offAllNamed(AppRoutes.Message);
 
   }
