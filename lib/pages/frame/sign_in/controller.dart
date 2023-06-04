@@ -40,7 +40,7 @@ class SignInController extends GetxController{
         loginPanelListRequestEntity.email=email;
         loginPanelListRequestEntity.open_id=id;
         loginPanelListRequestEntity.type=2;
-        asyncPostAllData();
+        asyncPostAllData(loginPanelListRequestEntity);
       }
       }else{
         print("Login in type is not sure");
@@ -53,13 +53,9 @@ class SignInController extends GetxController{
     }
   }
 
-  asyncPostAllData() async {
+  asyncPostAllData(LoginRequestEntity loginRequestEntity) async {
     print(".... Lets go to message page....>>");
     UserStore.to.setIsLogin=true;
-  var response= await HttpUtil().get("/api/index");
-  print('the response is::::::::::   ${response.toString()}');
-//  var userName= _googleSignIn.currentUser?.displayName;
-//   print("User name from email $userName");
     Get.offAllNamed(AppRoutes.Message);
 
   }
