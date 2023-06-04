@@ -28,7 +28,7 @@ class HttpUtil {
 
       // baseUrl: storage. read(key: STORAGE_KEY_APIURL) ?? SERVICE_API_BASEURL,
       //Connection server timeout, the unit is milliseconds.
-      connectTimeout: 60000,
+      connectTimeout: 10000,
 
       // The interval between two received data on the response stream, in milliseconds.
       receiveTimeout: 5000,

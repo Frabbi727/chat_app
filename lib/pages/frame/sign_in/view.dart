@@ -25,8 +25,8 @@ class SignInPage extends GetView<SignInController> {
 
   Widget _buildThirdPartyLogin({String? loginType, String? logo}) {
     return GestureDetector(
-      onTap: () {
-       controller.handelSignIn(type: "google");
+      onTap: () async {
+      var a = await controller.handelSignIn(type: "google");
       },
       child: Container(
         margin: EdgeInsets.only(bottom: 15.h),
